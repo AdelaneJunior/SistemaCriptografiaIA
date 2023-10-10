@@ -48,7 +48,7 @@ public class CriptografiaInterface extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String input = entradaTextArea.getText();
-                String encrypted = criptografia.criptografarMensagem(input);
+                String encrypted = criptografia.criptografarMensagem(input.toUpperCase());
                 saidaTextArea.setText(encrypted);
             }
         });
